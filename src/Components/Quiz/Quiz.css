@@ -1,0 +1,88 @@
+.container {
+  width: 600px;
+  margin: auto;
+  margin-top: 150px;
+  background-color: #fff;
+  color: #262626;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-radius: 10px;
+  padding: 40px 50px;
+}
+
+.container hr {
+  height: 2px;
+  border: none;
+  background: #707070;
+}
+
+.container h3 {
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.container ul li {
+  display: flex;
+  align-items: center;
+  height: 60px;
+  border: 1px solid #686868;
+  padding-left: 15px;
+  margin-bottom: 25px;
+  border-radius: 50px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.container button {
+  margin: auto;
+  width: 250px;
+  height: 65px;
+  background: #603ec4;
+  color: #fff;
+  font-size: 25px;
+  font-weight: 500;
+  border-radius: 10px;
+  cursor: pointer;
+  border: 1px solid #2a0a53;
+}
+
+.container button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.container button span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.container button:hover span {
+  padding-right: 25px;
+}
+
+.container button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.container .index {
+  font-size: 18px;
+  margin: auto;
+}
+
+.container .correct {
+  background: #dffff2;
+  border-color: #00d397;
+}
+
+.container .incorrect {
+  background: #ffebeb;
+  border-color: #ff4a4a;
+}
